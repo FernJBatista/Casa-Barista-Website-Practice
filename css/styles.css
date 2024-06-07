@@ -185,6 +185,7 @@ button {
   color: var(--Brand-White);
   border: 2px solid #fafafa;
   background-color: transparent;
+  border-radius: 0.25rem;
 }
 
 a {
@@ -252,4 +253,148 @@ main section.hero-home {
   height: 100vh;
   border: 2rem solid var(--Brand-White);
   gap: 1rem;
+}
+main section.hero-home div.hero-cta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+}
+main section.hero-home div.hero-cta a {
+  color: inherit;
+}
+main section.hero-home div.hero-cta button.fill {
+  background-color: var(--Brand-White);
+  color: var(--Eerie-Black);
+}
+main section.about-us {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+main section.about-us img {
+  width: 50%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section.about-us div.about-us-home {
+  padding: 6rem;
+  color: var(--Eerie-Black);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+main section.about-us div.about-us-home button {
+  color: var(--Eerie-Black);
+  border: 2px solid var(--Eerie-Black);
+  width: -moz-max-content;
+  width: max-content;
+}
+main section.our-story {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  background-color: var(--Bronze);
+}
+main section.our-story img {
+  width: 50%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section.our-story div.about-us-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  color: var(--Brand-White);
+  padding: 6rem;
+}
+main section.our-story div.about-us-content button {
+  color: var(--Brand-White);
+  border: 2px solid var(--Brand-White);
+  width: -moz-max-content;
+  width: max-content;
+}
+main section.gluten-free-cta {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+main section.gluten-free-cta .gluten-free {
+  position: relative;
+  color: var(--Brand-White);
+  background-image: url(../media/images/Kitchen\ Sign.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding: 4.5rem 4.5rem;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+main section.gluten-free-cta .gluten-free::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+main section.gluten-free-cta div.gluten-free-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  color: var(--Brand-White);
+  max-width: 64rem;
+  justify-content: center;
+}
+main section.gluten-free-cta .gluten-free h3,
+main section.gluten-free-cta .gluten-free p {
+  position: relative;
+  color: var(--Brand-White);
+  z-index: 1; /* to make text appear above the overlay */
+}
+main section.gluten-free-cta .gluten-free button {
+  position: relative;
+  z-index: 1; /* to make button appear above the overlay */
+  background-color: transparent;
+  color: var(--Brand-White);
+  border: 2px solid var(--Brand-White);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  width: -moz-max-content;
+  width: max-content;
+}
+main section.gluten-free-cta .gluten-free button:hover {
+  background-color: var(--Brand-White);
+  color: black;
+}
+main section.gluten-free-cta div.cta-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 4.5rem 4.5rem;
+  color: var(--Brand-White);
+  align-items: end;
+  justify-content: center;
+  background-color: var(--Eerie-Black);
+  text-align: right;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+main section.gluten-free-cta div.cta-div button {
+  max-width: -moz-max-content;
+  max-width: max-content;
+  border: none;
+  color: #cf7a37;
 }
